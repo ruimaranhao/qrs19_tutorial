@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestDateMidnight_Basics",
+            "request": "launch",
+            "mainClass": "org.joda.time.TestDateMidnight_Basics",
+            "projectName": "joda-time"
+        }
+    ]
+}
