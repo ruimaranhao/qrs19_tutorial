@@ -52,7 +52,7 @@ docker run --name gzoltar2 -p 8080:80 -d gzoltar
 docker start gzoltar2
 ```
 
-Once the service has started, go to [localhost:8080](localhost:8080) to access the reports. 
+Once the service has started, go to [https://localhost:8080](https://localhost:8080) to access the reports. 
 
 
 Once done, run the following commands:
