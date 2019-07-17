@@ -47,11 +47,12 @@ Install the DDU metric following the instructions in this [link](https://github.
 There is a dockerized version of gzoltar running on maven available on Docker hub. Run the following commands to get it up and running:
 
 ```
+docker pull gzoltar/gzoltar_ddu
 docker run --name gzoltar2 -p 8080:80 -d gzoltar
 docker start gzoltar2
 ```
 
-Visit [localhost:8080](localhost:8080) to access the reports. 
+Once the service has started, go to [localhost:8080](localhost:8080) to access the reports. 
 
 
 Once done, run the following commands:
