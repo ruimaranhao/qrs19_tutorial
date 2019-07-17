@@ -48,7 +48,7 @@ There is a dockerized version of gzoltar running on maven available on Docker hu
 
 ```
 docker pull gzoltar/gzoltar_ddu
-docker run --name gzoltar2 -p 8080:80 -d gzoltar
+docker run --name gzoltar2 -p 8080:80 -d gzoltar/gzoltar_ddu
 docker start gzoltar2
 ```
 
