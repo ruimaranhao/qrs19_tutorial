@@ -61,3 +61,9 @@ Once done, run the following commands:
 docker stop gzoltar2
 docker rm gzoltar2
 ```
+
+You can also login into the container, and check things up there (e.g., try to fix the fault):
+
+```
+docker run -it gzoltar /bin/bash
+```
