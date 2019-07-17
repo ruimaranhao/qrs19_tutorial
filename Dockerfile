@@ -12,9 +12,9 @@ RUN \
 
 # Setting fault program up. 
 RUN \
-  wget https://gist.github.com/ruimaranhao/560d94f445c34d4a4f43647c8bb30ee7/raw/08b8dad78403e7f10f8d1a488e7b1f004eed57b0/joda-time-2.8.1.tgz && \ 
-  tar zxvf joda-time-2.8.1.tgz && \ 
-  rm joda-time-2.8.1.tgz
+  git clone https://github.com/ruimaranhao/qrs19_tutorial.git && \
+  mv qrs19_tutorial/joda-time-2.8.1 .. && \
+  rm -rf qrs19_tutorial
 
 # Install DDU 
 RUN \ 
@@ -22,12 +22,17 @@ RUN \
   cd ddu-maven-plugin && \
   mvn install
 
-# RUN GZoltar analysis
+# Run GZoltar analysis
 RUN \
    cd joda-time-2.8.1 && \
    mvn clean gzoltar:prepare-agent test gzoltar:fl-report
 
+# Run DDU analysis
+RUN \
+   cd joda-time-2.8.1 && \
+   mvn ddu:test
+
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY index.html /joda-time-2.8.1/target/site/
+COPY index.html /joda-time-2.8.1/target/
 
 
