@@ -2,6 +2,15 @@
 
 Below are the steps you need to do to set you system up for the QRS19 tutorial on [T6: Coverage-Based Automated Testing and Debugging](https://qrs19.techconf.org/tutorials/t6). There are two options: you either run the Eclipse IDE or the maven.
 
+## Setup 
+
+GZoltar requires `Java 8`, other versions will not work. Make sure that your project is using `Java 8` in the command line as well as in the Eclipse plugin. If version 8 is not your default one, you can run the following command (macOS):
+
+```
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+```
+
+
 ## GZoltar for Eclipse (aka Crowbar)
 
 GZoltar's internals depend on:
