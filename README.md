@@ -32,7 +32,7 @@ mvn clean gzoltar:prepare-agent test gzoltar:fl-report
 
 ## Buggy Program
 
-We have prepared a [buggy program](https://gist.github.com/ruimaranhao/560d94f445c34d4a4f43647c8bb30ee7/raw/08b8dad78403e7f10f8d1a488e7b1f004eed57b0/joda-time-2.8.1.tgz) for you to diagnose. 
+We have prepared a buggy program (available in this repository) for you to diagnose. 
 
 Star by either importing the program to eclipse or by inspect the `pom.xml` to see the changes to include gzoltar. 
 
