@@ -10,6 +10,7 @@ GZoltar requires `Java 8`, other versions will not work. Make sure that your pro
 export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 ```
 
+The following tutorial has been tested using the Eclipse IDE for developers, *Version: 2019-06 (4.12.0)*.
 
 ## GZoltar for Eclipse (aka Crowbar)
 
